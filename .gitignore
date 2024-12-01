@@ -1,0 +1,7 @@
+*.tar
+*.tar.gz
+**/*.a
+**/*.o
+lua/install/*
+elua
+lua_make
