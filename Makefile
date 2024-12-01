@@ -14,3 +14,6 @@ elua: lua_make main.c
 
 day1: elua day1.lua
 	./elua day1.lua
+
+day1p2: elua day1p2.lua
+	./elua day1p2.lua

@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
     return -1;
   }
   if (lua_pcall(L, 0, 0, 0) != LUA_OK) {
-    printf("Failed to load script");
+    printf("Failed to run script: %s\n", lua_tostring(L, -1));
     return -1;
   }
 
