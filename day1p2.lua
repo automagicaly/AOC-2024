@@ -25,6 +25,7 @@ local mt = {
 }
 setmetatable(lb, mt)
 local function read_input()
+    io.input("day1.input")
     local a, b = io.read("*n", "*n")
     while (a ~= nil) do
         la[#la + 1] = a

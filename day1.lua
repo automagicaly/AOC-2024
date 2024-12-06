@@ -2,6 +2,7 @@ print("AOC 2024 - day 1")
 local la = {}
 local lb = {}
 local function read_input()
+    io.input("day1.input")
     local a, b = io.read("*n", "*n")
     while (a ~= nil) do
         la[#la + 1] = a
@@ -56,4 +57,4 @@ local diff = 0
 for _ = 1, #la do
     diff = diff + math.abs(pop(la) - pop(lb))
 end
-print("\n" .. diff)
+print(diff)
